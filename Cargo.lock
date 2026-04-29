@@ -6088,6 +6088,9 @@ version = "0.0.0"
 dependencies = [
  "axum",
  "log",
+ "reqwest",
+ "serde",
+ "serde_json",
  "tokio",
  "tower",
  "tower-http",

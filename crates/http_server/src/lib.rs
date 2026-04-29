@@ -1,3 +1,4 @@
+mod ai_gateway;
 use std::net::SocketAddr;
 
 use tower_http::trace::TraceLayer;
@@ -61,3 +62,5 @@ impl Entity for HttpServer {
 }
 
 impl SingletonEntity for HttpServer {}
+
+pub use ai_gateway::router as ai_gateway_router;
